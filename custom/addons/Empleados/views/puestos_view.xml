@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<odoo>
+    <!--Vista para el formulario de Puestos-->
+    <record id="puestos_form_view" model="ir.ui.view">
+        <field name="name">puestos.form.view</field>
+        <field name="model">seapal_puestos</field>
+        <field name="arch" type="xml">
+            <form string="puestos">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="puesto"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+        <!--Vista para el Menu de Puestos-->
+    <record id="puestos_tree_view" model="ir.ui.view">
+        <field name="name">puestos.tree.view</field>
+        <field name="model">seapal_puestos</field>
+        <field name="arch" type="xml">
+                <tree name="puestos">
+                   <field name="puesto"/>
+                </tree>
+        </field>
+    </record>
+</odoo>

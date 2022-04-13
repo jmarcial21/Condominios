@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<odoo>
+    <!--Vista para el formulario de Departamentos-->
+    <record id="departamentos_form_view" model="ir.ui.view">
+        <field name="name">departamentos.form.view</field>
+        <field name="model">seapal_departamentos</field>
+        <field name="arch" type="xml">
+            <form string="departamentos">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="departamento"/>
+                            <field name="direccion"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+        <!--Vista para el Menu de Departamentos-->
+    <record id="departamentos_tree_view" model="ir.ui.view">
+        <field name="name">departamentos.tree.view</field>
+        <field name="model">seapal_departamentos</field>
+        <field name="arch" type="xml">
+                <tree name="departamentos">
+                   <field name="departamento"/>
+                    <field name="direccion"/>
+                </tree>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_direcciones_user,Accesso a Direcciones,model_seapal_direcciones,empleados_group_user,1,1,1,1
+access_departamentos_user,Accesso a Departamentos,model_seapal_departamentos,empleados_group_user,1,1,1,1
+access_puestos_user,Accesso a Puestos,model_seapal_puestos,empleados_group_user,1,1,1,1
+access_empleados_user,Accesso a Empleados,model_seapal_empleados,empleados_group_user,1,1,1,1

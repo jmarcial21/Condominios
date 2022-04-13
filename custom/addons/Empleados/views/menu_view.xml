@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+
+<odoo>
+    <record id="direcciones_action" model="ir.actions.act_window">
+        <field name="name">Direcciones</field>
+        <field name="res_model">seapal_direcciones</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="departamentos_action" model="ir.actions.act_window">
+        <field name="name">Departamentos</field>
+        <field name="res_model">seapal_departamentos</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="puestos_action" model="ir.actions.act_window">
+        <field name="name">Puestos</field>
+        <field name="res_model">seapal_puestos</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="empleados_action" model="ir.actions.act_window">
+        <field name="name">Empleados</field>
+        <field name="res_model">seapal_empleados</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Empleados" id="empleados_menu"/>
+    <menuitem name="Direcciones" id="direcciones_menu" parent="empleados_menu" action="direcciones_action"/>
+    <menuitem name="Departamentos" id="departamentos_menu" parent="empleados_menu" action="departamentos_action"/>
+    <menuitem name="Puestos" id="puestos_menu" parent="empleados_menu" action="puestos_action"/>
+    <menuitem name="Empleados" id="empleados2_menu" parent="empleados_menu" action="empleados_action"/>
+</odoo>

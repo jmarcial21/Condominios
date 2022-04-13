@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<odoo>
+    <!--Vista para el formulario de Direcciones-->
+    <record id="direcciones_form_view" model="ir.ui.view">
+        <field name="name">direcciones.form.view</field>
+        <field name="model">seapal_direcciones</field>
+        <field name="arch" type="xml">
+            <form string="direcciones">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="direccion"/>
+                            <field name="titular"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="direcciones_tree_view" model="ir.ui.view">
+        <field name="name">direcciones.tree.view</field>
+        <field name="model">seapal_direcciones</field>
+        <field name="arch" type="xml">
+                <tree name="direcciones">
+                    <field name="direccion"/>
+                    <field name="titular"/>
+                </tree>
+        </field>
+    </record>
+</odoo>

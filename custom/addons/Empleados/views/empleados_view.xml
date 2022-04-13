@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<odoo>
+    <!--Vista para el formulario de Empleados-->
+    <record id="empleados_form_view" model="ir.ui.view">
+        <field name="name">empleados.form.view</field>
+        <field name="model">seapal_empleados</field>
+        <field name="arch" type="xml">
+            <form string="empleados">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="nombre"/>
+                            <field name="primer_apellido"/>
+                            <field name="segundo_apellido"/>
+                            <field name="departamento"/>
+                            <field name="puesto"/>
+                            <field name="rfc"/>
+                            <field name="curp"/>
+                            <field name="activo"/>
+                            <field name="foto_perfil" widget="image" class="oe_avatar"/>
+                            <field name="email"/>
+                            <field name="telefono"/>
+                            <field name="num_nomina"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+        <!--Vista para el Menu de Empleados-->
+    <record id="empleados_tree_view" model="ir.ui.view">
+        <field name="name">empleados.tree.view</field>
+        <field name="model">seapal_empleados</field>
+        <field name="arch" type="xml">
+            <tree name="empleados">
+                <field name="num_nomina"/>
+                <field name="nombre"/>
+                <field name="primer_apellido"/>
+                <field name="segundo_apellido"/>
+                <field name="departamento"/>
+                <field name="puesto"/>
+                <field name="rfc"/>
+                <field name="curp"/>
+                <field name="activo"/>
+                <field name="foto_perfil"/>
+                <field name="email"/>
+                <field name="telefono"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
